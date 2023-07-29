@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  todo_mongodb:
+    image: mongo:latest
+    restart: always
+    env_file:
+    - .env
+    ports:
+      - '27017:27017'
+    volumes:
+      - todo_db:/data/db
+volumes:
+  todo_db:
