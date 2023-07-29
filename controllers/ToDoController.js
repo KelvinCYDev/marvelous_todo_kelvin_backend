@@ -39,8 +39,8 @@ module.exports.updateToDo = (req, res) => {
 };
 
 module.exports.updateDone = (req, res) => {
-  const { _id } = req.body;
-  ToDoModel.findByIdAndUpdate(_id, { done: true })
+  const { _id, done } = req.body;
+  ToDoModel.findByIdAndUpdate(_id, { done: done })
     .then(() => res.set(201).send("Updated to Done Successfully..."))
     .catch((err) => console.log(err));
 };
