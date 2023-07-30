@@ -6,6 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/KelvinCYDev/marvelous_todo_kelvin_backend">
+    <img src="https://github.com/KelvinCYDev/marvelous_todo_kelvin_frontend/blob/main/assets/screenshot.png" alt="Logo">
   </a>
 
   <h3 align="center">Marvelous V2.0 To Do Backend</h3>
