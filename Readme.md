@@ -39,7 +39,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -127,20 +127,88 @@ To get a local copy up and running, please follow the following steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
+## Usage
 
-## Roadmap
+The REST API usage is described below.
 
-- [x] CRUD for ToDo tasks
-- [x] Add "Done" status and timestamp for ToDo tasks
-- [x] Allow using checkbox to change the To Do status
-- [x] ToDo task columns alphabetically ordering
-- [x] The 'Done' list only shows the 10 most recently completed tasks
-- [x] Users can select the auto-refresh period for the ToDo list (5 sec, 15 seconds, 30 seconds, 1 minute)
-- [x] Searching functionality
-- [x] 'Delete all tasks' button
+### Get list of To Do tasks
 
-See the [open issues](https://github.com/KelvinCYDev/marvelous_todo_kelvin_backend/issues) for a full list of proposed features (and known issues).
+```sh
+'GET /'
+```
+
+```sh
+ [
+  {
+      "_id": "64c617b056c69eeb23ef9b8d",
+      "text": "Task 1",
+      "done": false,
+      "createdAt": "2023-07-30T07:56:32.451Z",
+      "updatedAt": "2023-07-30T07:56:32.451Z",
+      "__v": 0
+  }
+]
+```
+
+### Save a new To Do task
+
+```sh
+'POST /save'
+
+{
+   "text": "Task B"
+}
+```
+
+```sh
+{
+    "_id": "64c603d76a157c1e54f45039",
+    "text": "Task B",
+    "done": false,
+    "createdAt": "2023-07-30T06:31:51.229Z",
+    "updatedAt": "2023-07-30T06:40:51.885Z",
+    "__v": 0
+}
+```
+
+### Update a To Do task
+
+```sh
+'PUT /save'
+
+{
+   "_id": "64c603d76a157c1e54f45039",
+   "text": "Task B",
+    "done": false
+}
+```
+
+```sh
+{
+    "_id": "64c603d76a157c1e54f45039",
+    "text": "Task B",
+    "done": false,
+    "createdAt": "2023-07-30T06:31:51.229Z",
+    "updatedAt": "2023-07-30T06:40:51.885Z",
+    "__v": 0
+}
+```
+
+### Delete a To Do task
+
+```sh
+'POST /delete'
+
+{
+   "_id": "64c603d76a157c1e54f45039",
+}
+```
+
+### Delete all To Do tasks
+
+```sh
+'DELETE /delete'
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
