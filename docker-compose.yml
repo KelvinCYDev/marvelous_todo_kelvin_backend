@@ -1,5 +1,15 @@
 version: '3.8'
 services:
+  todo_backend:
+    build:
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./:/app
+    env_file:
+    - .env
+    ports:
+      - '5000:5000'
   todo_mongodb:
     image: mongo:latest
     restart: always

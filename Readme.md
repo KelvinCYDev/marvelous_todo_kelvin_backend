@@ -95,38 +95,30 @@ To get a local copy up and running, please follow the following steps.
 ### Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/KelvinCYDev/marvelous_todo_kelvin_backend.git
    ```
-2. Docker compose up in order to setup local MongoDB
 
-   ```sh
-    docker compose up -xd
-   ```
+2. Copy .env file from .env.example and make changes if needed
 
-3. Install YARN packages
-
-   ```sh
-   yarn install
-   ```
-
-4. Copy .env file from .env.example and make changes if needed
    ```sh
    cp .env.example .env
    ```
-5. To run the project
+
+3. Docker compose up. Both the API server and MongoDB will be ready
 
    ```sh
-   yarn run start
+    docker compose up -d
    ```
 
-6. To test the project
+4. To test the project
 
    ```sh
    yarn test
    ```
 
-7. This is just the backend, the frontend part is here:
+5. This is just the backend, the frontend part is here:
 
    ```sh
    https://github.com/KelvinCYDev/marvelous_todo_kelvin_frontend

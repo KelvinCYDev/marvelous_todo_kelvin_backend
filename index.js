@@ -5,16 +5,21 @@ const cors = require("cors");
 const routes = require("./routes/ToDoRoute");
 
 const app = express();
-const PORT = process.env.PORT | 5000;
+const PORT = process.env.PORT | (process.env.NODE_ENV == "test") ? 5001 : 5000;
 
 app.use(express.json());
 app.use(cors());
 
 mongoose
-  .connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    process.env.NODE_ENV == "test"
+      ? process.env.TEST_MONGODB_URL
+      : process.env.DOCKER_MONGODB_URL,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Mongodb Connected Successfully"))
   .catch((err) => console.error(err));
 
