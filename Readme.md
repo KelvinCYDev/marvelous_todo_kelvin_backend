@@ -9,7 +9,7 @@
     <img src="https://github.com/KelvinCYDev/marvelous_todo_kelvin_frontend/blob/main/assets/screenshot.png" alt="Logo">
   </a>
 
-  <h3 align="center">Marvelous V2.0 To Do Backend</h3>
+  <h3 align="center">Marvelous V2.0 To-Do Backend</h3>
 
   <p align="center">
     A simple To-Do app!
