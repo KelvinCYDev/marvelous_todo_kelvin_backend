@@ -120,7 +120,14 @@ To get a local copy up and running, please follow the following steps.
    yarn run start
    ```
 
-6. This is just the backend, the frontend part is here:
+6. To test the project
+
+   ```sh
+   yarn test
+   ```
+
+7. This is just the backend, the frontend part is here:
+
    ```sh
    https://github.com/KelvinCYDev/marvelous_todo_kelvin_frontend
    ```
