@@ -5,7 +5,6 @@ const {
   saveToDo,
   deleteToDo,
   updateToDo,
-  updateDone,
   deleteAll,
 } = require("../controllers/ToDoController");
 
@@ -15,9 +14,7 @@ router.get("/", getToDo);
 
 router.post("/save", saveToDo);
 
-router.post("/update", updateToDo);
-
-router.post("/updateDone", updateDone);
+router.put("/update", updateToDo);
 
 router.post("/delete", deleteToDo);
 

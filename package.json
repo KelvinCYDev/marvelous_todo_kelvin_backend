@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha --timeout 10000"
   },
   "repository": "https://github.com/KelvinCYDev/marvelous_todo_kelvin_backend.git",
   "author": "kelvincyhk <kelvincyhk@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "mocha": "^10.2.0",
     "mongoose": "^7.4.1"
   }
 }
