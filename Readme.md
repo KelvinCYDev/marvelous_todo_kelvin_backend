@@ -49,6 +49,8 @@
   </ol>
 </details>
 
+See the [open issues](https://github.com/KelvinCYDev/marvelous_todo_kelvin_backend/issues) for a full list of proposed features (and known issues).
+
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
