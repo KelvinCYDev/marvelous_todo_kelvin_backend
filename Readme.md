@@ -12,7 +12,7 @@
   <h3 align="center">Marvelous V2.0 To Do Backend</h3>
 
   <p align="center">
-    A simple To Do app!
+    A simple To-Do app!
     <br />
     <br />
     ·
@@ -59,7 +59,7 @@ Combined with https://github.com/KelvinCYDev/marvelous_todo_kelvin_frontend, thi
 - User can check and uncheck tasks. The tasks will appear in the corresponding columns ('To Do', 'Done')
 - The 'To Do' list is unlimited
 - The 'Done' list only shows 10 most recently completed tasks
-- Users can select the auto refresh period for the ToDo list (5 sec, 15 seconds, 30 seconds, 1 minute)
+- Users can select the auto syncing period for the ToDo list (5 sec, 15 seconds, 30 seconds, 1 minute)
 - As the user enters text in the search box, both columns are filtered to display only tasks matching the text entered thus far
 - User can delete all the tasks at once by pressing 'Delete all tasks'
 
@@ -131,7 +131,7 @@ To get a local copy up and running, please follow the following steps.
 
 The REST API usage is described below.
 
-### Get list of To Do tasks
+### Get a list of To-Do tasks
 
 ```sh
 'GET /'
@@ -162,7 +162,7 @@ The REST API usage is described below.
 }
 ```
 
-### Save a new To Do task
+### Save a new To-Do task
 
 ```sh
 'POST /save'
@@ -183,7 +183,7 @@ The REST API usage is described below.
 }
 ```
 
-### Update a To Do task
+### Update a To-Do task
 
 ```sh
 'PUT /save'
@@ -206,7 +206,7 @@ The REST API usage is described below.
 }
 ```
 
-### Delete a To Do task
+### Delete a To-Do task
 
 ```sh
 'POST /delete'
@@ -216,7 +216,7 @@ The REST API usage is described below.
 }
 ```
 
-### Delete all To Do tasks
+### Delete all To-Do tasks
 
 ```sh
 'DELETE /delete'
@@ -228,7 +228,7 @@ The REST API usage is described below.
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
