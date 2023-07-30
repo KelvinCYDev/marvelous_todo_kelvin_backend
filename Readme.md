@@ -41,6 +41,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -223,6 +224,14 @@ The REST API usage is described below.
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Roadmap
+
+- [x] Connect a local docker MongoDB database with Mongoose
+- [x] Develop CRUD APIs for ToDo tasks
+- [x] Dockerize the API server with MongoDB
+- [x] Unit test using mocha and chai
+
 
 <!-- CONTRIBUTING -->
 
