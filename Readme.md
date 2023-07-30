@@ -138,16 +138,28 @@ The REST API usage is described below.
 ```
 
 ```sh
- [
-  {
-      "_id": "64c617b056c69eeb23ef9b8d",
-      "text": "Task 1",
-      "done": false,
-      "createdAt": "2023-07-30T07:56:32.451Z",
-      "updatedAt": "2023-07-30T07:56:32.451Z",
-      "__v": 0
-  }
-]
+ {
+    "todo": [
+        {
+            "_id": "64c62615ff3bf83770958fad",
+            "text": "Task 1",
+            "done": false,
+            "createdAt": "2023-07-30T08:57:57.526Z",
+            "updatedAt": "2023-07-30T08:57:57.526Z",
+            "__v": 0
+        }
+    ],
+    "todoDone": [
+        {
+            "_id": "64c62617ff3bf83770958fb0",
+            "text": "Task 2",
+            "done": true,
+            "createdAt": "2023-07-30T08:57:59.523Z",
+            "updatedAt": "2023-07-30T08:58:03.567Z",
+            "__v": 0
+        }
+    ]
+}
 ```
 
 ### Save a new To Do task

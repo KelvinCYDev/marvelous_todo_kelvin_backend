@@ -1,8 +1,35 @@
 const ToDoModel = require("../models/ToDoModel");
 
+const sortAlphabetically = (array) => {
+  return array.sort((a, b) => {
+    const textA = a.text.toUpperCase();
+    const textB = b.text.toUpperCase();
+    if (textA < textB) {
+      return -1;
+    }
+    if (textA > textB) {
+      return 1;
+    }
+    return 0;
+  });
+};
+
 module.exports.getToDo = async (req, res) => {
-  const todo = await ToDoModel.find();
-  res.send(todo);
+  const todoAll = await ToDoModel.find();
+  let todo = sortAlphabetically(
+    todoAll.filter((task) => {
+      return task.done == false;
+    })
+  );
+  let todoDone = todoAll.filter((task) => {
+    return task.done == true;
+  });
+  if (todoDone.length > 10) {
+    todoDone = todoDone
+      .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+      .slice(0, 10);
+  }
+  res.send({ todo, todoDone: sortAlphabetically(todoDone) });
 };
 
 module.exports.saveToDo = (req, res) => {
