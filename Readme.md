@@ -113,7 +113,7 @@ To get a local copy up and running, please follow the following steps.
     docker compose up -d
    ```
 
-4. To test the project
+4. To test the project with mocha and chai
 
    ```sh
    yarn test
